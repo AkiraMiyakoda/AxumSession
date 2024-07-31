@@ -3201,10 +3201,11 @@ checksum = "4149deda5bd21e0f6ccaa2f907cd542541521dead5861bc51bebdf2af4acaf2a"
 
 [[package]]
 name = "redis"
-version = "0.25.4"
+version = "0.26.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e0d7a6955c7511f60f3ba9e86c6d02b3c3f144f8c24b288d1f4e18074ab8bbec"
+checksum = "8cc5b667390cb038bc65fc4b18c06e2550469f7e06a02d886f1a018a11f63563"
 dependencies = [
+ "arc-swap",
  "async-trait",
  "bytes",
  "combine",
@@ -3213,6 +3214,7 @@ dependencies = [
  "futures-util",
  "itoa",
  "log",
+ "num-bigint",
  "percent-encoding",
  "pin-project-lite",
  "rand 0.8.5",
@@ -3227,8 +3229,7 @@ dependencies = [
 [[package]]
 name = "redis_pool"
 version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f5fdba2b6eefecf9aa77e49a15ea66d47a160d3acf003d8f8e707b24405d696"
+source = "git+https://github.com/AkiraMiyakoda/RedisPool.git?rev=401b3421c6c5d5566f04feb04c7e546f5e3631ba#401b3421c6c5d5566f04feb04c7e546f5e3631ba"
 dependencies = [
  "async-trait",
  "crossbeam-queue",

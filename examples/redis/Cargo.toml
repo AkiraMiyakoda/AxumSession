@@ -8,7 +8,7 @@ edition = "2021"
 axum.workspace = true
 tokio.workspace = true
 async-trait.workspace = true
-redis_pool = "0.4.0"
-redis = { version = "0.25.0" }
+redis_pool = { git = "https://github.com/AkiraMiyakoda/RedisPool.git", rev = "401b3421c6c5d5566f04feb04c7e546f5e3631ba" }
+redis = { version = "0.26.0" }
 axum_session.workspace = true
 axum_session_redispool = { path = "../../databases/redispool" }

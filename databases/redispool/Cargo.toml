@@ -15,8 +15,8 @@ redis-clusterdb = ["redis_pool/cluster", "redis/cluster-async"]
 
 [dependencies]
 async-trait.workspace = true
-redis_pool = { version = "0.4.0" }
-redis = { version = "0.25.0", features = [
+redis_pool = { git = "https://github.com/AkiraMiyakoda/RedisPool.git", rev = "401b3421c6c5d5566f04feb04c7e546f5e3631ba" }
+redis = { version = "0.26.0", features = [
     "aio",
     "tokio-comp",
 ] }
